@@ -59,6 +59,7 @@ public class Sistema extends javax.swing.JFrame {
     double Totalpagar = 0.00;
 
     public Sistema() {
+        //System.out.println("easy pizi");
         initComponents();
         this.setLocationRelativeTo(null);
         txtIDCliente.setVisible(false);
