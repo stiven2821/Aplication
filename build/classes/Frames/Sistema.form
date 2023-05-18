@@ -81,11 +81,11 @@
                           <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="btnProductos" alignment="0" pref="159" max="32767" attributes="0"/>
-                                  <Component id="btnClientes" alignment="0" pref="159" max="32767" attributes="0"/>
-                                  <Component id="btnProovedor" alignment="0" pref="159" max="32767" attributes="0"/>
-                                  <Component id="btnNuevaVenta" alignment="0" pref="159" max="32767" attributes="0"/>
-                                  <Component id="btnVentas" alignment="0" pref="159" max="32767" attributes="0"/>
+                                  <Component id="btnProductos" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnClientes" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnProovedor" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnNuevaVenta" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnVentas" alignment="0" max="32767" attributes="0"/>
                                   <Component id="btnConfig" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>

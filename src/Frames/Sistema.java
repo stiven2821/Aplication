@@ -59,7 +59,7 @@ public class Sistema extends javax.swing.JFrame {
     double Totalpagar = 0.00;
 
     public Sistema() {
-        //System.out.println("carlos es re gay pahhh");
+        //System.out.println("pacha la pacha");
         initComponents();
         this.setLocationRelativeTo(null);
         txtIDCliente.setVisible(false);
