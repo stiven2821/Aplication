@@ -17,13 +17,13 @@ public class Loging extends javax.swing.JFrame {
     }
     
     public void validar(){//METODO PARA VALIDAR LOS DATOS DEL USUARIOs
-        String correo = txtNombre.getText();
+        String correo = txtCorreo.getText();
         String pass = String.valueOf(txtContrasena.getPassword());
         if(!"".equals(correo) || !"".equals(pass)){//VALIDAR EL NOMBRE Y CONTRASEÑA
             lg = login.log(correo, pass);
             
             if(lg.getCorreo()!= null && lg.getPass() != null){//Si es correcto al validar abre ventana sistemas y oculta ventana login
-                Sistema sis = new Sistema();
+                Sistema sis = new Sistema(lg);
                 sis.setVisible(true);
                 dispose();
             }
@@ -43,7 +43,7 @@ public class Loging extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        txtNombre = new javax.swing.JTextField();
+        txtCorreo = new javax.swing.JTextField();
         txtContrasena = new javax.swing.JPasswordField();
         jLabel6 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
@@ -120,7 +120,7 @@ public class Loging extends javax.swing.JFrame {
                                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(66, 66, 66)
-                                .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(97, 97, 97)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -143,7 +143,7 @@ public class Loging extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -215,7 +215,9 @@ public class Loging extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        Registro iniciar = new Registro();
+            iniciar.setVisible(true);
+            dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -266,6 +268,6 @@ public class Loging extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPasswordField txtContrasena;
-    private javax.swing.JTextField txtNombre;
+    private javax.swing.JTextField txtCorreo;
     // End of variables declaration//GEN-END:variables
 }

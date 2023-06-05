@@ -94,7 +94,7 @@
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
-                                      <Component id="txtNombre" min="-2" pref="191" max="-2" attributes="0"/>
+                                      <Component id="txtCorreo" min="-2" pref="191" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -126,7 +126,7 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtNombre" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtCorreo" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -174,7 +174,7 @@
                 <Property name="text" type="java.lang.String" value="Correo de Usuario"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtNombre">
+            <Component class="javax.swing.JTextField" name="txtCorreo">
             </Component>
             <Component class="javax.swing.JPasswordField" name="txtContrasena">
             </Component>

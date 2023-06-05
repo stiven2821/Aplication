@@ -6,16 +6,18 @@ public class login {
     private String nombre;
     private String correo;
     private String pass;
+    private String rol;
 
     //--------------------------------------------------------------------------CONSTRUCTORES
     public login() {
     }
 
-    public login(int id, String nombre, String correo, String pass) {
+    public login(int id, String nombre, String correo, String pass, String rol) {
         this.id = id;
         this.nombre = nombre;
         this.correo = correo;
         this.pass = pass;
+        this.rol = rol;
     }
     //--------------------------------------------------------------------------SETTERS AND GETTERS
 
@@ -49,6 +51,14 @@ public class login {
 
     public void setPass(String pass) {
         this.pass = pass;
+    }
+
+    public String getRol() {
+        return rol;
+    }
+
+    public void setRol(String rol) {
+        this.rol = rol;
     }
     
     
